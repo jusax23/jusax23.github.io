@@ -1,8 +1,9 @@
 
 function onload(){
   getLocation();
+  x = document.getElementById("canvas");
 }
-var x = document.getElementById("canvas");
+var x;
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.watchPosition(showPosition);
