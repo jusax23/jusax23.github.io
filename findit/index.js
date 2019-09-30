@@ -12,7 +12,7 @@ function onload(){
   ctx = c.getContext("2d");
   render = new Render(ctx,obj,cam);
   window.requestAnimationFrame(tick);
-}
+} 
 
 var cam = {pos:[0,0,0],rot:[0,0]};
 var c;
