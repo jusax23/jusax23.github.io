@@ -17,7 +17,7 @@ var cam = {pos:[0,0,0],rot:[0,0]};
 var c;
 var ctx;
 var render;
-var obj = [{pos:[-9,0,5],size:[1,1,1],rot:[0,0]}];
+var obj = [{pos:[52.158847,5,11.64772],size:[0.000001,0.000001,0.000001],rot:[0,0]}];
 
 function getLocation() {
   if (navigator.geolocation) {
@@ -35,4 +35,5 @@ function showPosition(position) {
 
 function tick(){
   window.requestAnimationFrame(tick);
+  render.draw();
 }
