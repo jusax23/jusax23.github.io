@@ -11,6 +11,7 @@ function onload(){
   c = document.getElementById("canvas");
   ctx = c.getContext("2d");
   render = new Render(ctx,obj,cam);
+  window.requestAnimationFrame(tick);
 }
 
 var cam = {pos:[0,0,0],rot:[0,0]};
