@@ -13,8 +13,8 @@ function onload(){
 }
 
 var canvas;
-var ctx;
-var video; 
+var ctx; 
+var video;
 
 function tick(){
   canvas.width = window.innerWidth;
