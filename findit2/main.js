@@ -10,6 +10,7 @@ function onload(){
         video.play();
     });
   }
+  tick();
 }
 
 var canvas;
