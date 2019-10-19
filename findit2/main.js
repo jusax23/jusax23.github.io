@@ -12,9 +12,9 @@ function onload(){
   }
 }
 
-const canvas = null;
-const ctx = null;
-const video = null; 
+var canvas;
+var ctx;
+var video; 
 
 function tick(){
   canvas.width = window.innerWidth;
