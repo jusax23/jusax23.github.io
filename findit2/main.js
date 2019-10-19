@@ -14,7 +14,7 @@ function onload(){
 
 const canvas = null;
 const ctx = null;
-const video = null;
+const video = null; 
 
 function tick(){
   canvas.width = window.innerWidth;
