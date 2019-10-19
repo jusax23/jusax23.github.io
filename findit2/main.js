@@ -4,7 +4,7 @@ function onload(){
   ctx = canvas.getContext("2d");
   video = document.getElementById('video');
   if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+    navigator.mediaDevices.getUserMedia({ video: { facingMode: { exact: "environment" } } }).then(function(stream) {
         //video.src = window.URL.createObjectURL(stream);
         video.srcObject = stream;
         video.play();
