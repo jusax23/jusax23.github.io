@@ -17,10 +17,12 @@ const ctx;
 const video;
 
 function tick(){
-  var my = canvas.height;
-  var mx = canvas.width;
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+	width = window.innerWidth;
+	height = window.innerHeight;
 
   window.requestAnimationFrame(tick);
   console.log("test");
-  context.drawImage(video, 0, 0, mx, my);
+  context.drawImage(video, 0, 0, width, height);
 }
