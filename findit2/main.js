@@ -18,11 +18,12 @@ var ctx;
 var video;
 
 function tick(){
+  window.requestAnimationFrame(tick);
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
 	width = window.innerWidth;
 	height = window.innerHeight;
 
-  window.requestAnimationFrame(tick);
+
   ctx.drawImage(video, 0, 0, width, height);
 }
