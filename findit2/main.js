@@ -4,6 +4,6 @@ function onload(){
 
 
 function tick(){
-  window.requestAnmationFrame(tick);
+  window.requestAnimationFrame(tick);
   console.log("test");
 }
