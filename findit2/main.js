@@ -13,7 +13,7 @@ function onload(){
 }
 
 var canvas;
-var ctx; 
+var ctx;
 var video;
 
 function tick(){
@@ -23,6 +23,5 @@ function tick(){
 	height = window.innerHeight;
 
   window.requestAnimationFrame(tick);
-  console.log("test");
-  context.drawImage(video, 0, 0, width, height);
+  ctx.drawImage(video, 0, 0, width, height);
 }
